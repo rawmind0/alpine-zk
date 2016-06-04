@@ -3,8 +3,7 @@ MAINTAINER Raul Sanchez <rawmind@gmail.com>
 
 ENV SERVICE_NAME=zk \
     SERVICE_HOME=/opt/zk \
-    SERVICE_CONF=0 \
-    SERVICE_VERSION=3.4.6 \
+    SERVICE_VERSION=3.4.8 \
     PATH=/opt/zk/bin:${PATH}
 
 # Install service software
