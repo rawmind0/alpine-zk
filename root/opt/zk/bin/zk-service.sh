@@ -3,11 +3,14 @@
 SERVICE_NAME=zk
 SERVICE_HOME=${SERVICE_HOME:-"/opt/zk"}
 
-ZK_DATA_DIR=${ZK_DATA_DIR:"/opt/zk/data"}
+ZK_DATA_DIR=${ZK_DATA_DIR:-"/opt/zk/data"}
 ZK_INIT_LIMIT=${ZK_INIT_LIMIT:-"10"}
-ZK_MAX_CLIENT_CXNS=${ZK_MAX_CLIENT_CXNS:"500"}
+ZK_MAX_CLIENT_CXNS=${ZK_MAX_CLIENT_CXNS:-"500"}
 ZK_SYNC_LIMIT=${ZK_SYNC_LIMIT:-"5"}
 ZK_TICK_TIME=${ZK_TICK_TIME:-"2000"}
+ZOO_LOG_DIR=${ZOO_LOG_DIR:-"/opt/zk/logs"}
+
+export ZOO_LOG_DIR
 
 function log {
         echo `date` $ME - $@
