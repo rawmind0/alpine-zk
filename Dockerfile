@@ -15,7 +15,7 @@ RUN SERVICE_RELEASE=zookeeper-${SERVICE_VERSION} \
   && curl -sS -k http://apache.rediris.es/zookeeper/${SERVICE_RELEASE}/${SERVICE_RELEASE}.tar.gz | gunzip -c - | tar -xf - -C /opt \
   && mv /opt/zookeeper-* ${SERVICE_HOME} \
   && mkdir -p ${SERVICE_HOME}/logs ${SERVICE_HOME}/data \
-  && chmod +x ${SERVICE_HOME}/bin/*.sh 
+  && chmod +x ${SERVICE_HOME}/bin/*.sh \
   && addgroup -g ${SERVICE_GID} ${SERVICE_GROUP} \
   && adduser -g "${SERVICE_NAME} user" -D -h ${SERVICE_HOME} -G ${SERVICE_GROUP} -s /sbin/nologin -u ${SERVICE_UID} ${SERVICE_USER} 
 ADD root /
