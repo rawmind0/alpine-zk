@@ -1,6 +1,6 @@
 zk:
   tty: true
-  image: rawmind/alpine-zk:3.4.8-2
+  image: rawmind/alpine-zk:3.4.8-3
   volumes_from:
     - zk-volume
     - zk-conf
