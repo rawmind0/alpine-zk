@@ -11,3 +11,7 @@ autopurge.snapRetainCount=3
 autopurge.purgeInterval=1
 server.0 = 127.0.0.1:2888:3888
 EOF
+
+cat << EOF > ${SERVICE_HOME}/data/myid
+0
+EOF
