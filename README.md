@@ -11,13 +11,14 @@ docker build -t rawmind/alpine-zk:<version> .
 
 ## Versions
 
-- `3.4.8` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8/Dockerfile)
-- `3.4.6` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.6/Dockerfile)
+- `3.4.6` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.6-0/Dockerfile)
 
 
 ## Configuration
 
-This image runs [zookeeper][zookeeper] with monit. Besides, you can customize the configuration in several ways:
+This image runs [zookeeper][zookeeper] with monit. Zookeeper is started with user and group "zookeeper".
+
+Besides, you can customize the configuration in several ways:
 
 ### Default Configuration
 
