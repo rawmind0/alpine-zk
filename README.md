@@ -1,7 +1,7 @@
 alpine-zk 
 ==============
 
-This image is the zookeeper base. It comes from rawmind/alpine-jvm8.
+This image is the zookeeper base. It comes from [alpine-jvm8][alpine-jvm8].
 
 ## Build
 
@@ -11,7 +11,8 @@ docker build -t rawmind/alpine-zk:<version> .
 
 ## Versions
 
-- `3.4.8-3` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8-3/Dockerfile)
+- `3.4.8-5` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8-5/Dockerfile)
+- `3.4.8-4` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8-4/Dockerfile)
 
 ## Configuration
 
@@ -48,7 +49,7 @@ If you are running it in rancher, you could run [rancher-zk][rancher-zk] as a si
 See [rancher-example][rancher-example], that run zookeeper in a rancher system with dynamic configuration.
 
 
-
+[alpine-jvm8]: https://github.com/rawmind0/alpine-jvm8/
 [zookeeper]: https://zookeeper.apache.org
 [rancher-zk]: https://hub.docker.com/r/rawmind/rancher-zk/
 [rancher-example]: https://github.com/rawmind0/alpine-zk/tree/master/rancher
