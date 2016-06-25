@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 ZK_DATA_DIR=${ZK_DATA_DIR:-"/opt/zk/data"}
 ZK_INIT_LIMIT=${ZK_INIT_LIMIT:-"10"}
