@@ -29,6 +29,7 @@ zookeeper is installed with the default configuration and some parameters can be
 - ZK_MAX_CLIENT_CXNS="500"
 - ZK_SYNC_LIMIT="5"
 - ZK_TICK_TIME="2000"
+- ZK_SERVER="127.0.0.1"
 
 
 ### Custom Configuration
