@@ -3,6 +3,8 @@
 SERVICE_LOG_DIR=${SERVICE_LOG_DIR:-${SERVICE_HOME}"/logs"}
 SERVICE_LOG_FILE=${SERVICE_LOG_FILE:-${SERVICE_LOG_DIR}"/zookeeper.out"}
 
+export ZOO_LOG_DIR=${SERVICE_LOG_DIR}
+
 function log {
         echo `date` $ME - $@
 }
@@ -67,7 +69,11 @@ case "$1" in
         "restart")
             serviceRestart
         ;;
-        *) echo "Usage: $0 restart|start|stop"
+        *) 
+            echo "Usage: $0 restart|start|stop"
+            exit 1
         ;;
 
 esac
+
+exit 0
