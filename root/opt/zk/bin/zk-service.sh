@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SERVICE_LOG_DIR=${SERVICE_LOG_DIR:-${SERVICE_HOME}"/logs"}
-SERVICE_LOG_FILE=${SERVICE_LOG_FILE:-${SERVICE_LOG_DIR}"/zookeeper.out"}
+SERVICE_LOG_FILE=${SERVICE_LOG_FILE:-${SERVICE_HOME}"/nohup.out"}
 
 export ZOO_LOG_DIR=${SERVICE_LOG_DIR}
 
@@ -50,6 +50,8 @@ function serviceStart {
 function serviceStop {
     log "[ Stoping ${SERVICE_NAME}... ]"
     ${SERVICE_HOME}/bin/zkServer.sh stop
+    kill -9 /opt/zk/data/zookeeper_server.pid
+    rm /opt/zk/data/zookeeper_server.pid
 }
 
 function serviceRestart {
