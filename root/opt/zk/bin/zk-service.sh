@@ -18,7 +18,8 @@ function serviceConf {
     log "[ Applying dinamic ${SERVICE_NAME} configuration... ]"
     while [ ! -f ${SERVICE_CONF} ]; do
         log "  Waiting for ${SERVICE_NAME} configuration..."
-        sleep 3 
+        /opt/monit/bin/monit reload
+        sleep 5
     done
 }
 
@@ -37,7 +38,7 @@ function serviceLog {
 function serviceCheck {
     log "[ Checking ${SERVICE_NAME} configuration... ]"
 
-    if [ -d "/opt/tools" ]; then
+    if [ -d "${SERVICE_VOLUME}" ]; then
         serviceConf
     else
         serviceDefault
