@@ -2,6 +2,7 @@ alpine-zk
 ==============
 
 This image is the zookeeper base. It comes from [alpine-jvm8][alpine-jvm8].
+[![](https://imagelayers.io/badge/rawmind/alpine-zk:3.4.8-13.svg)](https://imagelayers.io/?images=rawmind/alpine-zk:3.4.8-13 'Get your own badge on imagelayers.io')
 
 ## Build
 
@@ -11,7 +12,7 @@ docker build -t rawmind/alpine-zk:<version> .
 
 ## Versions
 
-- `3.4.8-12` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8-12/Dockerfile)
+- `3.4.8-13` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8-13/Dockerfile)
 - `3.4.6-1` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.6-1/Dockerfile)
 
 ## Configuration
@@ -44,13 +45,19 @@ You could also include FROM rawmind/alpine-zk at the top of your Dockerfile, and
 
 If you are running it in rancher, you could run [rancher-zk][rancher-zk] as a sidekick to get dynamic configuration.
 
+### k8s
+
+If you are running it in k8s, you could run [k8s-zk][k8s-zk] at the same pod to get dynamic configuration.
 
 ## Example
 
-See [rancher-example][rancher-example], that run zookeeper in a rancher system with dynamic configuration.
+See [rancher-example][rancher-example], rancher catalog package that runs zookeeper in a cattle environment with dynamic configuration.
+
+See [k8s-example][k8s-example], rancher catalog package that runs zookeeper in a k8s environment with dynamic configuration.
 
 
 [alpine-jvm8]: https://github.com/rawmind0/alpine-jvm8/
 [zookeeper]: https://zookeeper.apache.org
 [rancher-zk]: https://hub.docker.com/r/rawmind/rancher-zk/
 [rancher-example]: https://github.com/rawmind0/alpine-zk/tree/master/rancher
+[k8s-example]: https://github.com/rawmind0/alpine-zk/tree/master/k8s
