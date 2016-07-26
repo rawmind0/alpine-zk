@@ -18,7 +18,6 @@ function serviceConf {
     log "[ Applying dinamic ${SERVICE_NAME} configuration... ]"
     while [ ! -f ${SERVICE_CONF} ]; do
         log "  Waiting for ${SERVICE_NAME} configuration..."
-        /opt/monit/bin/monit reload
         sleep 5
     done
 }

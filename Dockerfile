@@ -1,4 +1,4 @@
-FROM rawmind/alpine-jvm8:1.8.92-4
+FROM rawmind/alpine-jvm8:1.8.92-6
 MAINTAINER Raul Sanchez <rawmind@gmail.com>
 
 ENV SERVICE_NAME=zk \
