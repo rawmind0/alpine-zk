@@ -59,5 +59,6 @@ See [k8s-example][k8s-example], rancher catalog package that runs zookeeper in a
 [alpine-jvm8]: https://github.com/rawmind0/alpine-jvm8/
 [zookeeper]: https://zookeeper.apache.org
 [rancher-zk]: https://hub.docker.com/r/rawmind/rancher-zk/
+[k8s-zk]: https://hub.docker.com/r/rawmind/k8s-zk/
 [rancher-example]: https://github.com/rawmind0/alpine-zk/tree/master/rancher
 [k8s-example]: https://github.com/rawmind0/alpine-zk/tree/master/k8s
