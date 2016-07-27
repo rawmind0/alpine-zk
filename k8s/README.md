@@ -4,6 +4,8 @@
 
  This template creates, scale in and scale out a multinodes zk (zookeeper) cluster on top of k8s. The configuration is generated with confd watching k8s metadata. 
  Cluster size are variable after deployment, and get reconfigured if you scale.
+
+ The services generates ZKID's (saving them as pod labels) and start the zookeeper cluster.
  
  
 ### Usage:
@@ -26,4 +28,4 @@
  
  Zookeeper can now be accessed over the Rancher network. 
 
- Note: When you scale the cluster, zero downtime is not guaranteed..yet..
+Testing Feature: When you scale the cluster, zero downtime is expected... 
