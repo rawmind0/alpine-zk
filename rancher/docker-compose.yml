@@ -31,12 +31,10 @@ zk-volume:
     io.rancher.container.hostname_override: container_name
     io.rancher.container.start_once: true
   environment:
-    - SERVICE_USER=zookeeper
     - SERVICE_UID=10002
-    - SERVICE_GROUP=zookeeper 
     - SERVICE_GID=10002
     - SERVICE_VOLUME=${zk_data_dir}
   volumes:
     - ${zk_data_dir}
   volume_driver: local
-  image: rawmind/alpine-volume:0.0.1-1
+  image: rawmind/alpine-volume:0.0.2-1

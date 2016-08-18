@@ -28,7 +28,7 @@ function serviceLog {
         rm ${SERVICE_LOG_FILE}
         ln -sf /proc/1/fd/1 ${SERVICE_LOG_FILE}
     fi
-    if [ ! -L ${SERVICE_HOME}/zookeeper.out} ]; then
+    if [ ! -L ${SERVICE_HOME}/nohup.out} ]; then
         rm ${SERVICE_HOME}/nohup.out
         ln -sf /proc/1/fd/1 ${SERVICE_HOME}/nohup.out
     fi
