@@ -35,7 +35,7 @@ zookeeper is installed with the default configuration and some parameters can be
 - ZK_TICK_TIME="2000"
 - ZK_SERVER="127.0.0.1"
 
-
+ 
 ### Custom Configuration
 
 Zookeeper is installed under /opt/zk and make use of /opt/zk/conf/myid and /opt/zk/conf/zoo.cfg.
