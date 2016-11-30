@@ -4,7 +4,7 @@ MAINTAINER Raul Sanchez <rawmind@gmail.com>
 ENV SERVICE_NAME=zk \
     SERVICE_HOME=/opt/zk \
     SERVICE_CONF=/opt/zk/conf/zoo.cfg \
-    SERVICE_VERSION=3.4.8 \
+    SERVICE_VERSION=3.4.9 \
     SERVICE_USER=zookeeper \
     SERVICE_UID=10002 \
     SERVICE_GROUP=zookeeper \
