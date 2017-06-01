@@ -44,3 +44,5 @@ USER $SERVICE_USER
 WORKDIR $SERVICE_HOME
 
 EXPOSE 2181 2888 3888
+
+HEALTHCHECK CMD monit summary | grep Running | grep -q zk-service || exit 1
