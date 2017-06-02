@@ -18,9 +18,8 @@ RUN SERVICE_RELEASE=zookeeper-${SERVICE_VERSION} && \
     cd /tmp && \
     apk --update add jq gnupg tar patch && \
     eval $(gpg-agent --daemon) && \
-    MIRROR=`curl -sS https://www.apache.org/dyn/closer.cgi\?as_json\=1 | jq -r '.preferred'` && \
-    curl -sSLO "${MIRROR}/zookeeper/stable/${SERVICE_RELEASE}.tar.gz" && \
-    curl -sSLO http://www.apache.org/dist/zookeeper/${SERVICE_RELEASE}/${SERVICE_RELEASE}.tar.gz.asc && \
+    curl -sSLO "https://dist.apache.org/repos/dist/release/zookeeper/${SERVICE_RELEASE}/${SERVICE_RELEASE}.tar.gz" && \
+    curl -sSLO https://dist.apache.org/repos/dist/release/zookeeper/${SERVICE_RELEASE}/${SERVICE_RELEASE}.tar.gz.asc && \
     curl -sSL  https://dist.apache.org/repos/dist/release/zookeeper/KEYS | gpg -v --import - && \
     gpg -v --verify ${SERVICE_RELEASE}.tar.gz.asc && \
     tar -zx -C ${SERVICE_HOME} --strip-components=1 --no-same-owner -f ${SERVICE_RELEASE}.tar.gz && \
