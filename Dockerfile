@@ -1,10 +1,10 @@
-FROM rawmind/alpine-jvm8:1.8.112-1
+FROM rawmind/alpine-jvm8:1.8.152-1
 MAINTAINER Raul Sanchez <rawmind@gmail.com>
 
 ENV SERVICE_NAME=zk \
     SERVICE_HOME=/opt/zk \
     SERVICE_CONF=/opt/zk/conf/zoo.cfg \
-    SERVICE_VERSION=3.4.9 \
+    SERVICE_VERSION=3.4.10 \
     SERVICE_USER=zookeeper \
     SERVICE_UID=10002 \
     SERVICE_GROUP=zookeeper \
