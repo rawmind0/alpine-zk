@@ -4,7 +4,7 @@ MAINTAINER Raul Sanchez <rawmind@gmail.com>
 ENV SERVICE_NAME=zk \
     SERVICE_HOME=/opt/zk \
     SERVICE_CONF=/opt/zk/conf/zoo.cfg \
-    SERVICE_VERSION=3.4.10 \
+    SERVICE_VERSION=3.4.12 \
     SERVICE_USER=zookeeper \
     SERVICE_UID=10002 \
     SERVICE_GROUP=zookeeper \
@@ -44,4 +44,4 @@ WORKDIR $SERVICE_HOME
 
 EXPOSE 2181 2888 3888
 
-HEALTHCHECK CMD monit summary | grep Running | grep -q zk-service || exit 1
+HEALTHCHECK CMD monit summary | grep OK | grep -q zk-service || exit 1
