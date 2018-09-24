@@ -13,7 +13,7 @@ docker build -t rawmind/alpine-zk:<version> .
 
 ## Versions
 
-- `3.4.12-0` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.12-0/Dockerfile)
+- `3.4.12-1` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.12-1/Dockerfile)
 - `3.4.10-0` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.10-0/Dockerfile)
 - `3.4.9-3` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.9-3/Dockerfile)
 - `3.4.8-16` [(Dockerfile)](https://github.com/rawmind0/alpine-zk/blob/3.4.8-16/Dockerfile)
